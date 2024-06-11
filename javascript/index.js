@@ -24,13 +24,14 @@ function updateTime() {
     )}`;
   }
 }
+
 function updateCity(event) {
   let cityTimeZoneElement = event.target.value;
   let cityName = cityTimeZoneElement.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZoneElement);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
-  <div class="city" id="london">
+  <div class="city">
           <div>
             <h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
