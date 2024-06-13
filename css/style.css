@@ -20,6 +20,16 @@ h2 {
   margin: 0 0 5px;
   font-size: 28px;
 }
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
+}
+a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
 .container {
   background: white;
   max-width: 600px;
